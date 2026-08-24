@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product toevoegen - SuperCar Vault Admin</title>
+    <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+    <div class="admin-topbar">
+        <div class="container">
+            <a href="dashboard.html">SuperCar Vault - Admin</a>
+            <a href="../index.html">Naar website</a>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="paneel">
+            <h1>Product toevoegen / aanpassen</h1>
+
+            <form action="dashboard.html">
+
+                <label for="naam">Productnaam</label>
+                <input id="naam" type="text" placeholder="bv. Porsche 911" required>
+
+                <label for="prijs">Prijs (in euro)</label>
+                <input id="prijs" type="number" min="0" step="100" placeholder="bv. 199000" required>
+
+                <label for="voorraad">Aantal op voorraad</label>
+                <input id="voorraad" type="number" min="0" step="1" placeholder="bv. 2" required>
+
+                <label for="label">Label</label>
+                <select id="label" required>
+                    <option value="">Kies een label...</option>
+                    <option>Nieuw</option>
+                    <option>Sale</option>
+                    <option>Limited</option>
+                </select>
+
+                <label for="beschrijving">Beschrijving</label>
+                <textarea id="beschrijving" placeholder="Korte omschrijving van het voertuig..."></textarea>
+
+                <div class="checkbox-rij">
+                    <input id="tonen" type="checkbox" checked>
+                    <label for="tonen">Tonen in de webshop</label>
+                </div>
+
+                <div class="rij-knoppen" style="margin-top:16px">
+                    <button class="btn btn-accent" type="submit">Opslaan</button>
+                    <a class="btn" href="dashboard.html">Annuleren</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
