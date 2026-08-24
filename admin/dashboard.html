@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - SuperCar Vault Admin</title>
+    <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+    <div class="admin-topbar">
+        <div class="container">
+            <a href="dashboard.html">SuperCar Vault - Admin</a>
+            <a href="../index.html">Naar website</a>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="paneel">
+
+            <div class="paneel-header">
+                <h1>Productinventaris</h1>
+                <a class="btn btn-accent" href="product-form.html">+ Product toevoegen</a>
+            </div>
+
+            <input type="search" placeholder="Zoek op productnaam..." aria-label="Zoek product">
+
+            <table class="tabel" aria-label="Overzicht van alle producten">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Productnaam</th>
+                        <th>Voorraadstatus</th>
+                        <th>Prijs</th>
+                        <th>Acties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SC-001</td>
+                        <td>BMW M4 F82</td>
+                        <td><span class="status status-op-voorraad">Op voorraad</span></td>
+                        <td>&euro; 62.900</td>
+                        <td class="rij-knoppen">
+                            <a class="btn btn-klein" href="product-form.html">Bewerken</a>
+                            <a class="btn btn-klein btn-gevaar" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SC-002</td>
+                        <td>BMW M4 (G82)</td>
+                        <td><span class="status status-op-voorraad">Op voorraad</span></td>
+                        <td>&euro; 89.500</td>
+                        <td class="rij-knoppen">
+                            <a class="btn btn-klein" href="product-form.html">Bewerken</a>
+                            <a class="btn btn-klein btn-gevaar" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SC-003</td>
+                        <td>Ferrari LaFerrari</td>
+                        <td><span class="status status-uitverkocht">Uitverkocht</span></td>
+                        <td>&euro; 3.450.000</td>
+                        <td class="rij-knoppen">
+                            <a class="btn btn-klein" href="product-form.html">Bewerken</a>
+                            <a class="btn btn-klein btn-gevaar" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SC-004</td>
+                        <td>Lamborghini Aventador</td>
+                        <td><span class="status status-op-voorraad">Op voorraad</span></td>
+                        <td>&euro; 389.000</td>
+                        <td class="rij-knoppen">
+                            <a class="btn btn-klein" href="product-form.html">Bewerken</a>
+                            <a class="btn btn-klein btn-gevaar" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SC-005</td>
+                        <td>Mercedes-AMG GT</td>
+                        <td><span class="status status-op-voorraad">Op voorraad</span></td>
+                        <td>&euro; 149.900</td>
+                        <td class="rij-knoppen">
+                            <a class="btn btn-klein" href="product-form.html">Bewerken</a>
+                            <a class="btn btn-klein btn-gevaar" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SC-006</td>
+                        <td>Mercedes-Benz G-Klasse</td>
+                        <td><span class="status status-uitverkocht">Uitverkocht</span></td>
+                        <td>&euro; 179.000</td>
+                        <td class="rij-knoppen">
+                            <a class="btn btn-klein" href="product-form.html">Bewerken</a>
+                            <a class="btn btn-klein btn-gevaar" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
