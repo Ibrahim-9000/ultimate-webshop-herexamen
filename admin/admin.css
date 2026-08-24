@@ -1,0 +1,227 @@
+:root {
+    --kleur-achtergrond: #f4f5f7;
+    --kleur-vak: #ffffff;
+    --kleur-rand: #d7dbe0;
+    --kleur-tekst: #23282f;
+    --kleur-tekst-zacht: #626b76;
+    --kleur-accent: #2856d6;
+    --randradius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+.admin-topbar {
+    background-color: var(--kleur-tekst);
+    color: #fff;
+    padding: 14px 0;
+}
+
+.admin-topbar .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-topbar a {
+    font-weight: 700;
+}
+
+.paneel {
+    background-color: var(--kleur-vak);
+    border: 1px solid var(--kleur-rand);
+    border-radius: var(--randradius);
+    padding: 24px;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 22px;
+}
+
+.paneel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid var(--kleur-rand);
+    border-radius: var(--randradius);
+    font-family: inherit;
+    font-size: 14px;
+    background-color: var(--kleur-vak);
+    color: var(--kleur-tekst);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--kleur-accent);
+    outline-offset: 1px;
+}
+
+.checkbox-rij {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0;
+}
+
+.checkbox-rij label {
+    margin: 0;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: var(--randradius);
+    border: 1px solid var(--kleur-rand);
+    background-color: var(--kleur-vak);
+    color: var(--kleur-tekst);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--kleur-achtergrond);
+}
+
+.btn-accent {
+    background-color: var(--kleur-accent);
+    border-color: var(--kleur-accent);
+    color: #fff;
+}
+
+.btn-accent:hover {
+    opacity: 0.9;
+}
+
+.btn-klein {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.btn-gevaar {
+    color: #b3261e;
+    border-color: #b3261e;
+}
+
+.rij-knoppen {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabel th {
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--kleur-tekst-zacht);
+    border-bottom: 2px solid var(--kleur-rand);
+    padding: 10px 8px;
+}
+
+.tabel td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--kleur-rand);
+}
+
+.tabel tr:hover {
+    background-color: var(--kleur-achtergrond);
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-op-voorraad {
+    background-color: #e2f5e8;
+    color: #1c7a3c;
+}
+
+.status-uitverkocht {
+    background-color: #fbe4e2;
+    color: #b3261e;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-paneel {
+    width: 340px;
+}
+
+@media (max-width: 600px) {
+    .tabel {
+        font-size: 13px;
+    }
+
+    .paneel {
+        padding: 16px;
+    }
+
+    .admin-topbar .container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
