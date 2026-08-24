@@ -1,0 +1,359 @@
+:root {
+    --kleur-achtergrond: #101418;
+    --kleur-vak: #1b212a;
+    --kleur-tekst: #f1f3f6;
+    --kleur-tekst-zacht: #a7b0bd;
+    --kleur-accent: #f2b134;
+    --randradius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bebas Neue", Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--kleur-vak);
+    border-bottom: 1px solid #2a323d;
+    padding: 16px 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-size: 24px;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a:hover {
+    color: var(--kleur-accent);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: var(--randradius);
+    border: 1px solid #2a323d;
+    background-color: var(--kleur-vak);
+    color: var(--kleur-tekst);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: var(--kleur-accent);
+}
+
+.btn-accent {
+    background-color: var(--kleur-accent);
+    color: #101418;
+    border: none;
+}
+
+.btn-accent:hover {
+    opacity: 0.9;
+}
+
+
+.hero {
+    padding: 40px 0;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-tekst {
+    flex: 1 1 380px;
+}
+
+.hero-tekst p {
+    color: var(--kleur-tekst-zacht);
+    max-width: 50ch;
+}
+
+.hero-afbeelding {
+    flex: 1 1 380px;
+}
+
+.hero-afbeelding img {
+    border-radius: var(--randradius);
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.sectie {
+    padding: 30px 0;
+}
+
+.sectie-intro {
+    margin-bottom: 20px;
+}
+
+.sectie-intro p {
+    color: var(--kleur-tekst-zacht);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 1 260px;
+    background-color: var(--kleur-vak);
+    border: 1px solid #2a323d;
+    border-radius: var(--randradius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-afbeelding {
+    position: relative;
+}
+
+.product-afbeelding img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #101418;
+}
+
+.label-nieuw {
+    background-color: #4ab0ff;
+}
+
+.label-sale {
+    background-color: #ff6b6b;
+}
+
+.label-limited {
+    background-color: var(--kleur-accent);
+}
+
+.product-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.prijs-rij {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.prijs-rij span {
+    color: var(--kleur-accent);
+    font-weight: 700;
+}
+
+.product-info p {
+    color: var(--kleur-tekst-zacht);
+    font-size: 14px;
+    margin: 0;
+}
+
+.product-info .btn {
+    margin-top: auto;
+    text-align: center;
+}
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1 1 220px;
+    background-color: var(--kleur-vak);
+    border: 1px solid #2a323d;
+    border-radius: var(--randradius);
+    padding: 18px;
+}
+
+
+footer {
+    border-top: 1px solid #2a323d;
+    background-color: var(--kleur-vak);
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-inner>div {
+    flex: 1 1 200px;
+}
+
+.footer-inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--kleur-tekst-zacht);
+}
+
+.footer-inner li {
+    margin-bottom: 6px;
+}
+
+
+.detail-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.detail-afbeelding {
+    flex: 1 1 400px;
+}
+
+.detail-afbeelding img {
+    border-radius: var(--randradius);
+    width: 100%;
+    object-fit: cover;
+}
+
+.detail-info {
+    flex: 1 1 350px;
+}
+
+.specs-lijst {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.specs-lijst li {
+    flex: 1 1 150px;
+    background-color: var(--kleur-vak);
+    border: 1px solid #2a323d;
+    border-radius: var(--randradius);
+    padding: 10px 12px;
+}
+
+.specs-lijst b {
+    display: block;
+    font-size: 12px;
+    color: var(--kleur-tekst-zacht);
+    text-transform: uppercase;
+}
+
+.reviews {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.review {
+    background-color: var(--kleur-vak);
+    border: 1px solid #2a323d;
+    border-radius: var(--randradius);
+    padding: 14px;
+}
+
+.review b {
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+@media (max-width: 650px) {
+    .hero-inner {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .product-grid,
+    .features,
+    .detail-inner {
+        flex-direction: column;
+    }
+}
